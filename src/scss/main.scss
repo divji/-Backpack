@@ -1,0 +1,42 @@
+@import './libs';
+@import './vars';
+@import './fonts';
+
+h1 {
+    font-family: 'Fira Sans', serif;
+    font-weight: 300;
+}
+
+::placeholder {
+    color: rgb(128, 128, 128);
+}
+
+body {
+ background-color: ghostwhite;    
+}
+
+.test { 
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import './media';

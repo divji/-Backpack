@@ -17,7 +17,7 @@ let images = () => {
 };
 
 let resizeSm = () => {
-	return src(`paths.images.dest/*.jpg`)
+	return src(`${paths.images.dest}/*.jpg`)
 		.pipe(
 			imageresize({
 				width: widthSm,
@@ -26,14 +26,14 @@ let resizeSm = () => {
 		)
 		.pipe(
 			rename((path) => {
-				path.basename += "-sm";
+				`${path.basename}-sm`;
 			})
 		)
-		.pipe(dest(paths.images.dest + "/small"));
+		.pipe(dest(`${paths.images.dest}/small`));
 };
 
 let resizeMd = () => {
-	return src(paths.images.dest + "/*.jpg")
+	return src(`${paths.images.dest}/*.jpg`)
 		.pipe(
 			imageresize({
 				width: widthMd,
@@ -43,14 +43,14 @@ let resizeMd = () => {
 		)
 		.pipe(
 			rename((path) => {
-				path.basename += "-md";
+				`${path.basename}-md`;
 			})
 		)
-		.pipe(dest(paths.images.dest + "/medium"));
+		.pipe(dest(`${paths.images.dest}/medium`));
 };
 
 let resizeLg = () => {
-	return src(paths.images.dest + "/*.jpg")
+	return src(`${paths.images.dest}/*.jpg`)
 		.pipe(
 			imageresize({
 				width: widthLg,
@@ -60,14 +60,14 @@ let resizeLg = () => {
 		)
 		.pipe(
 			rename((path) => {
-				path.basename += "-lg";
+				`${path.basename}-lg`;
 			})
 		)
-		.pipe(dest(paths.images.dest + "/large"));
+		.pipe(dest(`${paths.images.dest}/large`));
 };
 
 let resizeSm2x = () => {
-	return src(paths.images.dest + "/*.jpg")
+	return src(`${paths.images.dest}/*.jpg`)
 		.pipe(
 			imageresize({
 				width: widthSm + widthSm,
@@ -75,14 +75,14 @@ let resizeSm2x = () => {
 		)
 		.pipe(
 			rename((path) => {
-				path.basename += "-sm@2x";
+				`${path.basename}-sm@2x`;
 			})
 		)
-		.pipe(dest(paths.images.dest + "/small/@2x"));
+		.pipe(dest(`${paths.images.dest}/small/@2x`));
 };
 
 let resizeMd2x = () => {
-	return src(paths.images.dest + "/*.jpg")
+	return src(`${paths.images.dest}/*.jpg`)
 		.pipe(
 			imageresize({
 				width: widthMd + widthMd,
@@ -90,14 +90,14 @@ let resizeMd2x = () => {
 		)
 		.pipe(
 			rename((path) => {
-				path.basename += "-md@2x";
+				`${path.basename}-md@2x`;
 			})
 		)
-		.pipe(dest(paths.images.dest + "/medium/@2x"));
+		.pipe(dest(`${paths.images.dest}/medium/@2x`));
 };
 
 let resizeLg2x = () => {
-	return src(paths.images.dest + "/*.jpg")
+	return src(`${paths.images.dest}/*.jpg`)
 		.pipe(
 			imageresize({
 				width: widthLg + widthLg,
@@ -105,14 +105,14 @@ let resizeLg2x = () => {
 		)
 		.pipe(
 			rename((path) => {
-				path.basename += "-lg@2x";
+				`${path.basename}-lg@2x`;
 			})
 		)
-		.pipe(dest(paths.images.dest + "/large/@2x"));
+		.pipe(dest(`${paths.images.dest}/large/@2x`));
 };
 
 let resizeSm3x = () => {
-	return src(paths.images.dest + "/*.jpg")
+	return src(`${paths.images.dest}/*.jpg`)
 		.pipe(
 			imageresize({
 				width: widthSm + widthSm + widthSm,
@@ -120,14 +120,14 @@ let resizeSm3x = () => {
 		)
 		.pipe(
 			rename((path) => {
-				path.basename += "-sm@3x";
+				`${path.basename}-sm@3x`;
 			})
 		)
-		.pipe(dest(paths.images.dest + "/small/@3x"));
+		.pipe(dest(`${paths.images.dest}/small/@3x`));
 };
 
 let resizeMd3x = () => {
-	return src(paths.images.dest + "/*.jpg")
+	return src(`${paths.images.dest}/*.jpg`)
 		.pipe(
 			imageresize({
 				width: widthMd + widthMd + widthMd,
@@ -135,14 +135,14 @@ let resizeMd3x = () => {
 		)
 		.pipe(
 			rename((path) => {
-				path.basename += "-md@3x";
+				`${path.basename}-sm@3x`;
 			})
 		)
-		.pipe(dest(paths.images.dest + "/medium/@3x"));
+		.pipe(dest(`${paths.images.dest}/medium/@3x`));
 };
 
 let resizeLg3x = () => {
-	return src(paths.images.dest + "/*.jpg")
+	return src(`${paths.images.dest}/*.jpg`)
 		.pipe(
 			imageresize({
 				width: widthLg + widthLg + widthLg,
@@ -150,10 +150,10 @@ let resizeLg3x = () => {
 		)
 		.pipe(
 			rename((path) => {
-				path.basename += "-lg@3x";
+				`${path.basename}-lg@3x`;
 			})
 		)
-		.pipe(dest(paths.images.dest + "/large/@3x"));
+		.pipe(dest(`${paths.images.dest}/large/@3x`));
 };
 
 let cachemin = () => {
@@ -164,6 +164,7 @@ let cachemin = () => {
 
 exports.images = images;
 exports.cachemin = cachemin;
+
 exports.resizeSm = resizeSm;
 exports.resizeMd = resizeMd;
 exports.resizeLg = resizeLg;

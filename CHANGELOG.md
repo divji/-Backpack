@@ -2,6 +2,37 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/divji/Backpack/compare/v0.0.2...v0.0.3) (2021-06-23)
+
+
+### Features
+
+* add condition statements for the fonts, images, cleaners which follows option helper ([0134a5b](https://github.com/divji/Backpack/commit/0134a5b7803e4bef2d5dc7bdaa651b2d297a2307))
+* add option helper with some configurations ([954bdba](https://github.com/divji/Backpack/commit/954bdba67574ab261c773c9ebc809c6725867e24))
+
+
+### Bug Fixes
+
+* delete generated src files ([b1b2ae7](https://github.com/divji/Backpack/commit/b1b2ae7d84ab2912d7d60af257dfabaa36d00f26))
+* fix preinstall hook ([7aaec60](https://github.com/divji/Backpack/commit/7aaec60a36f90ead77702c8a23384d3fe113731c))
+
+
+### Styling
+
+* change quotes and concatenation to interpolation ([e175146](https://github.com/divji/Backpack/commit/e175146e3c186e52d2ca88042f360de074ac0fcd))
+
+
+### Build System
+
+* change gulp-ttf2towoff to gulp-ttftowoff2 for perfomance reasons ([8fde8bc](https://github.com/divji/Backpack/commit/8fde8bcfec0df6c41e9b16be5483dbe93231ad63))
+* remove package-lock.json ([5ecb782](https://github.com/divji/Backpack/commit/5ecb782175d963992b229bde76332e8d25f6c23e))
+* **clean.js:** add deepCleanSrc for delete auto-generated fonts and images ([fbd42f2](https://github.com/divji/Backpack/commit/fbd42f2d3ffa629b0502811824ed4217ba6ff2ec))
+
+
+### Others
+
+* add package-lock.json ([bf18cb2](https://github.com/divji/Backpack/commit/bf18cb23230f209f3a680a09d59f9d2fef0ca36b))
+
 ### [0.0.2](https://github.com/divji/Backpack/compare/v0.0.1...v0.0.2) (2021-06-21)
 
 

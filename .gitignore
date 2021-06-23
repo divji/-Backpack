@@ -30,7 +30,7 @@ jspm_packages/
 
 # Npm 
 .npm
-package-lock.json
+
 
 # Optional eslint cache
 .eslintcache

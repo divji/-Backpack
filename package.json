@@ -41,6 +41,7 @@
     "browser-sync": "^2.26.14",
     "commitizen": "^4.2.4",
     "conventional-changelog-cli": "^2.1.1",
+    "css-what": "^5.0.1",
     "cz-conventional-changelog": "^3.3.0",
     "del": "^6.0.0",
     "eslint": "^7.29.0",
@@ -63,12 +64,13 @@
     "gulp-postcss": "^9.0.0",
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^3.0.0",
-    "gulp-ttf2woff2": "^4.0.1",
+    "gulp-ttftowoff2": "^1.0.1",
     "gulp-uglify-es": "^2.0.0",
     "gulp-useref": "^5.0.0",
     "husky": "^5.0.9",
     "lint-staged": "^10.5.4",
     "node-sass": "^5.0.0",
+    "normalize-url": "^6.1.0",
     "postcss": "^8.3.5",
     "prettier": "2.2.1",
     "prettier-eslint": "^12.0.0",
@@ -88,6 +90,8 @@
     }
   },
   "resolutions": {
-    "trim-newlines": "^4.0.2"
+    "trim-newlines": "^4.0.2",
+    "css-what": "^5.0.1",
+    "normalize-url": "^6.1.0"
   }
 }

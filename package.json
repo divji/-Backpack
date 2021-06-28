@@ -10,7 +10,7 @@
     "first-release": "npx standard-version --first-release",
     "release": "npx standard-version",
     "commit": "git-cz",
-    "deploy": "git push --follow-tags origin main"
+    "deploy": "git push --follow-tags origin dev"
   },
   "repository": {
     "type": "git",

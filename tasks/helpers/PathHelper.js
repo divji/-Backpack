@@ -19,14 +19,14 @@ let paths = {
 		src: `${baseDir}/images/src/**/*`,
 		srcPublic: `${baseDir}/images/dest/**/*`,
 		dest: `${baseDir}/images/dest`,
-		public: `${deployDir}/images/`,
+		public: `${deployDir}/images/dest`,
 	},
 
 	fonts: {
 		src: `${baseDir}/fonts/src/**/*`,
 		srcPublic: `${baseDir}/fonts/dest/*`,
 		dest: `${baseDir}/fonts/dest`,
-		public: `${deployDir}/fonts/`,
+		public: `${deployDir}/fonts/dest`,
 	},
 
 	cssOutputName: "app.min.css",

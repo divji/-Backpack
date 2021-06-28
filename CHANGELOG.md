@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/divji/Backpack/compare/v0.0.4...v0.0.5) (2021-06-28)
+
+
+### Bug Fixes
+
+* add correct public path for images and fonts ([08212d3](https://github.com/divji/Backpack/commit/08212d345fb851aa9b41a51c2451afdd422bcefe))
+
+
+### Build System
+
+* add support for png, webp image optimization ([d404fe5](https://github.com/divji/Backpack/commit/d404fe5a78a8df61c515dfb3ecacd9d4e6d1084d))
+
 ### [0.0.4](https://github.com/divji/Backpack/compare/v0.0.3...v0.0.4) (2021-06-27)
 
 ### [0.0.3](https://github.com/divji/Backpack/compare/v0.0.2...v0.0.3) (2021-06-23)

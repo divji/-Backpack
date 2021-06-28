@@ -17,7 +17,7 @@ let images = () => {
 };
 
 let resizeSm = () => {
-	return src(`${paths.images.dest}/*.jpg`)
+	return src(`${paths.images.dest}/*.{jpg,webp,png}`)
 		.pipe(
 			imageresize({
 				width: widthSm,
@@ -33,7 +33,7 @@ let resizeSm = () => {
 };
 
 let resizeMd = () => {
-	return src(`${paths.images.dest}/*.jpg`)
+	return src(`${paths.images.dest}/*.{jpg,webp,png}`)
 		.pipe(
 			imageresize({
 				width: widthMd,
@@ -50,7 +50,7 @@ let resizeMd = () => {
 };
 
 let resizeLg = () => {
-	return src(`${paths.images.dest}/*.jpg`)
+	return src(`${paths.images.dest}/*.{jpg,webp,png}`)
 		.pipe(
 			imageresize({
 				width: widthLg,
@@ -67,7 +67,7 @@ let resizeLg = () => {
 };
 
 let resizeSm2x = () => {
-	return src(`${paths.images.dest}/*.jpg`)
+	return src(`${paths.images.dest}/*.{jpg,webp,png}`)
 		.pipe(
 			imageresize({
 				width: widthSm + widthSm,
@@ -82,7 +82,7 @@ let resizeSm2x = () => {
 };
 
 let resizeMd2x = () => {
-	return src(`${paths.images.dest}/*.jpg`)
+	return src(`${paths.images.dest}/*.{jpg,webp,png}`)
 		.pipe(
 			imageresize({
 				width: widthMd + widthMd,
@@ -97,7 +97,7 @@ let resizeMd2x = () => {
 };
 
 let resizeLg2x = () => {
-	return src(`${paths.images.dest}/*.jpg`)
+	return src(`${paths.images.dest}/*.{jpg,webp,png}`)
 		.pipe(
 			imageresize({
 				width: widthLg + widthLg,
@@ -112,7 +112,7 @@ let resizeLg2x = () => {
 };
 
 let resizeSm3x = () => {
-	return src(`${paths.images.dest}/*.jpg`)
+	return src(`${paths.images.dest}/*.{jpg,webp,png}`)
 		.pipe(
 			imageresize({
 				width: widthSm + widthSm + widthSm,
@@ -127,7 +127,7 @@ let resizeSm3x = () => {
 };
 
 let resizeMd3x = () => {
-	return src(`${paths.images.dest}/*.jpg`)
+	return src(`${paths.images.dest}/*.{jpg,webp,png}`)
 		.pipe(
 			imageresize({
 				width: widthMd + widthMd + widthMd,
@@ -142,7 +142,7 @@ let resizeMd3x = () => {
 };
 
 let resizeLg3x = () => {
-	return src(`${paths.images.dest}/*.jpg`)
+	return src(`${paths.images.dest}/*.{jpg,webp,png}`)
 		.pipe(
 			imageresize({
 				width: widthLg + widthLg + widthLg,

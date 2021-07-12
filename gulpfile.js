@@ -12,7 +12,7 @@ const fonts = require("./tasks/Font");
 const images = require("./tasks/Image");
 const clean = require("./tasks/Clean");
 
-if (options.imageResize === true) {
+if (options.imageResize) {
 	exports.resizeImages = series(
 		images.images,
 		images.resizeSm,
@@ -30,7 +30,7 @@ if (options.imageResize === true) {
 	exports.convertImages = series(images.images, images.cachemin);
 }
 
-if (options.fontGeneration === true) {
+if (options.fontGeneration) {
 	exports.convertFonts = series(
 		fonts.transform,
 		fonts.transformToWoff2,
@@ -40,13 +40,13 @@ if (options.fontGeneration === true) {
 	exports.rebaseFonts = series(fonts.transform, fonts.ttfRebase);
 }
 
-if (options.deepCleanSrc === true) {
+if (options.deepCleanSrc) {
 	exports.deepCleanSrc = series(clean.deepCleanSrc);
 } else {
 	exports.cleanSrc = clean.cleanSrc;
 }
 
-exports.dev = series(
+exports.devInit = series(
 	series(
 		this.deepCleanSrc || this.cleanSrc,
 		this.convertFonts || this.rebaseFonts,
@@ -73,4 +73,9 @@ exports.build = series(
 		assets.publicFonts,
 		assets.publicImages
 	)
+);
+
+exports.default = series(
+	series(styles.styles, scripts.scripts),
+	parallel(watch.sync, watch.startWatch)
 );

@@ -27,7 +27,7 @@ let reload = () => {
 let startWatch = () => {
 	watch(`${baseDir}/**/scss/**/*`, styles.styles);
 	watch(
-		[baseDir + "/**/*.js", "!" + paths.scripts.dest + "/*.min.js"],
+		[`${baseDir}/**/*.js`, `!${paths.scripts.dest}/*.min.js`],
 		scripts.scripts
 	);
 };

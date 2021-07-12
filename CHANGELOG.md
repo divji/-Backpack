@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.6](https://github.com/divji/Backpack/compare/v0.0.5...v0.0.6) (2021-07-12)
+
+
+### Features
+
+* add correct path to import normalize.css ([95519df](https://github.com/divji/Backpack/commit/95519dfe0da43a102c958353d2b3a9b98e41b365))
+* add correct src ([17e4c34](https://github.com/divji/Backpack/commit/17e4c342b3bfad4735922108860afc30177fd9f2))
+* add module scss structure ([96e2f0a](https://github.com/divji/Backpack/commit/96e2f0aa21f80eb0f4a8c95eaea693b8f50a0d43))
+
+
+### Bug Fixes
+
+* fix scripts watch task with correct path and rewrite to es6 syntax ([26896e4](https://github.com/divji/Backpack/commit/26896e4d7bccc867edb928ab0d52da22ff5f767b))
+
+
+### Build System
+
+* add default task ([bf74faf](https://github.com/divji/Backpack/commit/bf74fafe7f6e932005941174852e20c115540375))
+
 ### [0.0.5](https://github.com/divji/Backpack/compare/v0.0.4...v0.0.5) (2021-06-28)
 
 
